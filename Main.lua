@@ -4,6 +4,8 @@
     
     written by: @engo#0320
 
+    fixed by: boomanoid#5242
+
 ]]
 
 if not game:IsLoaded() then 
@@ -34,7 +36,7 @@ local funcs = {}; do
             return readfile(url)
         end
 
-        local newUrl = (bypass and "https://raw.githubusercontent.com/joeengo/" or "https://raw.githubusercontent.com/joeengo/engoware/main/") .. url:gsub("engoware/", ""):gsub("engoware\\", "")
+        local newUrl = (bypass and "https://raw.githubusercontent.com/trollfacenan/" or "https://raw.githubusercontent.com/trollfacenan/engoware/main/") .. url:gsub("engoware/", ""):gsub("engoware\\", "")
         local response = request({
             Url = bypass2 and url or newUrl,
             Method = "GET",
@@ -1107,7 +1109,7 @@ local teleportConnection = lplr.OnTeleport:Connect(function(State)
             if engoware_developer then 
                 loadstring(readfile("engoware/Main.lua"))()
             else 
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/engoware/main/Main.lua", true))() 
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/trollfacenan/engoware/main/Main.lua", true))() 
             end
         ]]
 		queueteleport(stringtp)
