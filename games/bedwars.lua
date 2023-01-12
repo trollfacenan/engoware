@@ -62,7 +62,7 @@ modules = {
 
     BlockEngine = require(game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"]["@easy-games"]["block-engine"].out).BlockEngine,
     BlockBreaker = KnitClient.Controllers.BlockBreakController.blockBreaker,
-    Maid = require(game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].maid.Maid),
+    Maid = require(game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"]["@easy-games"].knit.src.Knit.Util.Maid),
 
     QueueService = require(game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"]["@easy-games"].lobby.out.server.services["queue-service"]).QueueService,
     QueueMeta = require(game:GetService("ReplicatedStorage").TS.game["queue-meta"]).QueueMeta,
